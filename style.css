@@ -20,7 +20,8 @@ label {
     color: grey;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: lightgray;
     border-radius: 5px;
     border: none;
@@ -84,9 +85,30 @@ input, textarea {
     color: white;
 }
 
-.form-btn-container button:hover{
+.form-btn-container button:hover {
     background-color: transparent;
     border: 2px solid green;
     color: green;
 }
 
+@media screen and (max-width: 700px) {
+    body {
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-inputs-cont {
+        flex-direction: column;
+    }
+
+    .form-input-extra {
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
